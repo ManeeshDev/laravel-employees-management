@@ -1,3 +1,42 @@
+
+## This is a Employees Management Web App.
+
+#### Installation
+ 1. Fork, clone or download this repository.
+ 2. Run ` composer install ` if it's the initial setup or ` composer update `.
+ 3. Run ` npm install ` .
+ 4. Setup your environment keys in .env 
+     (*If .env does not exist then copy / rename .env.example as .env*)
+ 5. Setup database details in .env and create empty database in phyMyAdmin or...
+ 6. ~~Run ` php artisan app:name ` to set the name (namespace) of your app.~~ 
+     (*Remember not to live any spaces*)
+ 7. Run ` php artisan key:generate ` is a command that sets the APP_KEY value in your .env file. 
+ 8. Run ` php artisan migrate ` for initial tables setup.
+ 9. __Optional:__ Run ` php artisan db:seed --class=RoleTableSeeder ` to set the initial 
+     roles and permissions, then follow `step 7` below to assign a user the initial permissions and roles.
+ 10. __Optional:__ To create a `super / root` admin; 
+     Run ` php artisan admin:assign-role youremail@example.org admin-root `. 
+     Substitute `youremail@example.org` with an existing user email. `admin-root` is the __default root Admin role__. 
+     
+     __Note:__ You must follow `step 6` above first to set up the root admin.
+
+
+    > git clone git@example.org/user/repository-name-directory.git
+    > cd repository-name-directory
+    > composer update
+    > npm install
+    > php artisan key:generate
+    > php artisan migrate
+
+##### Run App::
+    > php artisan serve
+
+📌 in 2021;
+
+______________
+______________
+______________
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
